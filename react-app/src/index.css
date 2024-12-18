@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.m-conatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.progress-bar {
+  width: 600px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.progress-bar span {
+  position: absolute;
+}
+
+.progress-bar div {
+  height: 100%;
+  background-color: rgb(26, 135, 26);
+}
+
+.img{
+  width: 200px;
+  height: 150px;
+}
