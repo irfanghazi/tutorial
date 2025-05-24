@@ -1,0 +1,67 @@
+
+.board {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.boards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.msg{
+    font-size: 1.5rem;
+}
+
+.buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.reset_btn{
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(228, 75, 88);
+    color: white;
+}
+.reset_btn:hover{
+    background-color:  rgb(145, 57, 66);;
+}
+
+.new_btn{
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(31, 143, 223, 0.895);
+    color: white;
+}
+
+.scoreboard{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}

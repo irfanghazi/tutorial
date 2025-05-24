@@ -1,0 +1,19 @@
+
+
+.star{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 5px;
+}
+
+.btn_items{
+    font-size: 5rem;
+    border: none;
+    color: rgb(123, 115, 115);
+    cursor: pointer;
+}
+
+.colored{
+    color:#FF9529
+}

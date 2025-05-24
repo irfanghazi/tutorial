@@ -42,7 +42,6 @@ function longestCommonString3() {
         }
     }
     console.log(substring)
-
 }
 // longestCommonString3()
 

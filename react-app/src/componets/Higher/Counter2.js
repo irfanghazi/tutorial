@@ -1,21 +1,13 @@
-import React, { useState } from 'react'
-import Counter from './HOC/counter'
+import React from 'react'
+import counter from './HOC/counter'
 
 const Counter2 = (props) => {
-    // const [count, setCount] = useState(0)
-    // const incrementCount = () => {
-    //     setCount(count + 1)
-    // }
-    const {count,incrementCount } = props
-
-    return (
-        <>
-            <div>
-            <button onClick={incrementCount}>Counter2: {count}</button>
-            </div>
-                
-        </>
-    )
+    const {increment, count}  = props
+  return (
+    <>
+    <button onClick={increment}>Counter2:{count}</button>
+    Counter2</>
+  )
 }
 
-export default Counter(Counter2)
+export default counter(Counter2)

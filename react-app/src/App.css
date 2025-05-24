@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.post_img{
+  width: 150px;
+  height: 100px;
+}
+
+/* .nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link{
+  text-decoration: none;
+} */

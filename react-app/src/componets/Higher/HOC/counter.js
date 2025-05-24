@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
 
-const Counter = (OriginalComponent) => {
-    const UpdatedCom = () => {
-        const [count, setCount] = useState(0)
-        const incrementCount = () => {
-            setCount(count + 1)
-        }
-        return <OriginalComponent count={count} incrementCount={incrementCount} />
+const counter = () => {
+
+ const UpdatedCounter = (OriginalComponent) => {
+    const [count, setCount] = useState(0)
+
+    const incrementCount = () => {
+        setCount((preCount) => preCount+1)
     }
-    return UpdatedCom
+
+    return <OriginalComponent count ={count} incrementCount = {incrementCount}/>
+ }
+ return UpdatedCounter
 }
 
-export default Counter
+export default counter

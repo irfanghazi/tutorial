@@ -38,7 +38,115 @@ code {
   background-color: rgb(26, 135, 26);
 }
 
-.img{
+.img {
   width: 200px;
   height: 150px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.index {
+  padding: 2px;
+  max-height: 30vh;
+}
+
+.prod-img {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+  width: 200px;
+  height: 150px;
+}
+
+.btn-page {
+  padding: 0 5 0 5;
+}
+
+.p_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p_bar {
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 20px;
+  background-color: grey;
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.p_bar span {
+  position: absolute;
+}
+
+.p_bar div {
+  height: 100%;
+  background-color: rgba(0, 255, 162, 0.587);
+}
+
+.card {
+  padding: 10px;
+}
+
+.quote {
+  background-color: aqua;
+  padding: 40px;
+}
+
+.ans {
+  background-color: beige;
+}
+
+.replyBtn {
+  padding: 3px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+
+}
+
+.cancelBtn {
+  margin: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+}
+
+.saveBtn {
+  margin: 10px;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+}
+
+.comment_container {
+  width: 50%;
+  margin: 0 auto;
+  background-color: aliceblue;
 }

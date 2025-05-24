@@ -4,9 +4,14 @@ import ProgressBar from './ProgressBar'
 const ProgressContent = () => {
   const [value, setValue] = useState(0)
   useEffect(() => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       setValue((preVal) => preVal + 1)
     }, 100)
+
+    return () => {
+      clearInterval(interval)
+    }
+
   }, [])
   return (
     <div className='m-conatiner'>

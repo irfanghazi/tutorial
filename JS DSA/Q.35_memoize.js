@@ -122,10 +122,10 @@ function fakePromise(input, delay, isRejected) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (isRejected) {
-                reject(new Error('Something went wrong'))
-                return
+                return reject(new Error('Something went wrong'))  
+            } else{
+                resolve(input)
             }
-            resolve(input)
         }, delay)
     })
 }
@@ -136,12 +136,12 @@ Promise.all([fakePromise(2, 1000, false), fakePromise(3, 2000, false)]).then((re
 })
 
 // Create Our own Prmoise.all
-function myPromiseAll(fun) {
+function myPromiseAll(promises) {
     return new Promise((resolve, reject) => {
-        let result = new Array(fun.length)
+        let result = new Array(promises.length)
         let completed = 0
-        for (let i = 0; i < fun.length; i++) {
-            fun[i].then((res) => {
+        for (let i = 0; i < promises.length; i++) {
+            promises[i].then((res) => {
                 result[i] = res
                 completed += 1
                 if (result.length == completed) {
